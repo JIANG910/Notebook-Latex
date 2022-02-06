@@ -1,0 +1,108 @@
+\chapter{不定积分}
+\section{不定积分的基本概念}
+\defination[原函数]
+如果在区间$I$上，可导函数$F(x)$的导函数为$f(x)$,即对任一$x\in I$都有
+\begin{equation}
+	F'(x)=f(x)\huo \d F(x)=f(x)\d x
+\end{equation}
+那么函数$F(x)$就称为$f(x)$(或$f(x)\d x$)在区间$I$上的一个\highlight{red}{原函数\index{YHS{原函数}}}。\\
+\kg 例如，$(\sin x)'=\cos x$,故$\sin x$是$\cos x$的一个原函数。
+\\ 
+
+\sj
+\theorem[原函数存在定理]
+如果函数$f(x)$在区间$I$上连续，那么在区间$I$上存在可导函数$F(x)$.使对任一$x\in I$都有
+\begin{equation}
+	F‘(x)=f(x)
+\end{equation}
+简单地说就是：\textbf{连续函数一定有原函数}(详见定理4.8证明)
+\warn[\kg 由于常数$C$的导数$(C)‘=0$,故一个函数的原函数有多个，可表示为$F(x)+C$($C$为常数)。]
+\defination[不定积分]
+在区间$I$上，函数$f(x)$的带有任意常数项的原函数称为$f(x)$(或$f(x)\d x$)在区间$I$上的不定积分，记作
+\begin{equation}
+	\int f(x)\d x
+\end{equation}
+其中记号$\int$称为积分号，$f(x)$称为被积函数，$f(x)\d x$称为被积表达式，$x$称为积分变量
+\\ 由此可知，如果$F(x)$是函数$f(x)$在区间$I$上的一个原函数，那么$F(x)+C$就是$f(x)$的\highlight{red}{\index{BDJF@不定积分}不定积分}，即
+\begin{equation}
+	\int f(x)\d x=F(x)+C
+\end{equation}
+\kg 函数$f(x)$的原函数的图形称为$f(x)$的\highlight{red}{\index{JFQX@积分曲线}积分曲线}。
+\section{不定积分的性质}
+\theorem[不定积分性质1]
+设函数$f(x)$及$g(x)$的原函数存在，则
+\begin{equation}
+	\int [f(x)+g(x)]\d x=\int f(x)\d x+\int g(x)\d x
+\end{equation}
+\proof 设$f(x)$的原函数为$F(x)+C_1$,$g(x)$的原函数为$G(x)+C_2$,$f(x)+g(x)$的原函数为$F(x)+G(x)+C_3$,即
+\begin{equation}
+	\nonumber
+	\int f(x)\d x=F(x)+C_1,\int g(x)\d x=G(x)+C_2,\int[f(x)+g(x)]\d x=F(x)+G(x)
++C_3\end{equation}
+由于常数相加仍然是常数，即可令$C_3=C_1+C_2$,则上式成立。
+
+
+\theorem[不定积分性质2]
+设函数$f(x)$的原函数存在，则
+\begin{equation}
+	\int kf(x)\d x=k\int f(x)\d x
+\end{equation}
+\section{积分表}
+\subsection{基本积分表}
+\sj\sj
+\begin{flalign*}
+	& 1.\enspace \int k\d x=kx+C(k\text{为常数})   && 2.\enspace \int x^\mu\d x=\frac{x^{\mu+1}}{\mu+1}+C(\mu\neq-1)\vspace*{1em}&&\\
+	& 3.\enspace\int \frac{\d x}{x}=\ln |x|+C   & &4.\enspace\int\frac{\d x}{1+x^2}=\arctan x+C\vspace{1em}&&\\
+	& 5.\enspace \int\frac{\d x}{\sqrt{1-x^2}}=\arcsin x+C   && 6.\enspace\int \cos x\d x=\sin x+C\vspace{1em}&&\\
+	& 7.\enspace\int\sin x\d x=-\cos x+C  && 8.\enspace \int \sec^2 x \d x=\tan x+C\vspace{1em}&&\\
+	& 9.\enspace\int \csc^2 x\d x=-\cot x+C   &&10.\enspace \int \sec x\tan x\d x=\sec x+C\vspace{1em}&&\\
+	& 11.\enspace\int \csc x\cot x\d x=-\csc x+C   & &12.\enspace\int e^x\d x=e^x+C\vspace{1em}&&\\
+	& 13.\enspace\int a^x\d x=\frac{a^x}{\ln a}+C   
+	& &14.\enspace \int\text{sh} x\d x=\text{ch}x+C\vspace{1em}&&\\
+	&15.\enspace\int\text{ch}x\d x=\text{sh}\hspace{0.2em} x+C   & &16.\enspace\int-\frac{\d x}{\sqrt{1-x^2}}=\arccos x+C\vspace{1em}&&\\
+	&17.\enspace\int\frac{1}{\text{ch}^2x}\d x=\text{th}\hspace{0.2em} x+C   & &18.\enspace\enspace\int\frac{1}{\text{sh}^2x}\d x=-\frac{1}{\text{th }x}+C\vspace{1em}&&
+\end{flalign*}
+\subsection{扩展积分表}
+\noindent 注：下列常数$a>0$，部分内容涉及三角函数的变换(参阅附章三角函数公式)以及不定积分的运算法则(参阅3.4）\vspace{-1em}\\
+17.\enspace $\di\int \tan x\d x=-\ln |\cos x|+C$
+\vspace{0.5em}\\ \proof $\di\int \tan x\d x=\int \frac{\sin x}{\cos x}\d x=-\int\frac{1}{\cos x}\d (\cos x)=-\ln|\cos x|+C.$\\
+18.\enspace $\di\int \cot x\d x=-\ln |\sin x|+C$
+\vspace{0.5em}\\ \proof $\di\int \cot x\d x=\int \frac{\cos x}{\sin x}\d x=\int\frac{1}{\sin x}\d (\sin x)=\ln|\sin x|+C.$\\
+19.\enspace $\di\int \csc x\d x=\int\frac{1}{\sin x}\d x=\frac{1}{2}\ln \bigg|\frac{1-\cos x}{1+\cos x}\bigg|+C=\ln\big |\tan \frac{x}{2}\big|+C=\ln|\csc x+\cot x|+C
+$
+\vspace{0.5em}\\ \proof $\di\int \csc x\d x=\int \frac{1}{\sin x}\d x=\int\frac{\sin x}{\sin^2 x}\d x=-\frac{1}{1-\cos^2 x}\d (\cos x)=-\frac{1}{2}\int \big(\frac{1}{1-\cos x}+\frac{1}{1+\cos x}\big)\d(\cos x)$\\
+=$-\di\frac{1}{2}\ln \bigg|\di\frac{1+\cos x}{1-\cos x}\bigg|+C=\di\frac{1}{2}\ln \bigg|\di\frac{1-\cos x}{1+\cos x}\bigg|+C=\ln\big |\tan \frac{x}{2}\big|+C. $
+\vspace{0.5em}\\20.\enspace $\di\int \sec x\d x=\int\frac{1}{\cos x}\d x=\frac{1}{2}\ln \bigg|\frac{1+\sin x}{1-\sin x}\bigg|+C=\ln|\sec x+\tan x|+C
+$
+\vspace{0.5em}\\
+\proof 证明与18相似，证明略\\
+21.\enspace $\di\int\frac{1}{a^2+x^2}\d x=\frac{1}{a}\arctan\frac{x}{a}+C$\vspace{0.5em}\\
+\proof $\di\int\frac{1}{a^2+x^2}\d x=\frac{1}{a^2}\int\frac{1}{1+(\frac{x}{a})^2}\d x=\frac{1}{a}\int\frac{1}{1+(\frac{x}{a})^2}\d(\frac{x}{a})=\frac{1}{a}\arctan\frac{x}{a}+C.$
+\\ 
+22.\enspace $\di\int\frac{1}{a^2-x^2}\d x=\frac{1}{2a}\ln \big|\frac{a+x}{a-x}\big|+C$\vspace{0.5em}\\
+\proof $\di\int\frac{1}{a^2-x^2}\d x=\frac{1}{2a}\int\big(\frac{1}{a+x}+\frac{1}{a+x}\big)\d x=\frac{1}{2a}\ln \big|\frac{a+x}{a-x}\big|+C.$\\
+23.\enspace$\di\int\frac{1}{\sqrt{a^2-x^2}}\d x=\arcsin \frac{x}{a}+C$\vspace{0.5em}\\
+\proof $\di\int \frac{1}{\sqrt{a^2-x^2}}\d x=\frac{1}{a}\int\frac{1}{\sqrt{1-(\frac{x}{a})^2}}\d \big(\frac{x}{a}\big)=\arcsin \frac{x}{a}+C.\\$
+24.\enspace $\di\frac{1}{\sqrt{x^2\pm a^2)}}\d x=\ln |x+\sqrt{x^2\pm a^2}|+C$\vspace{0.5em}\\
+\proof 由于正负号证法相似，故下面只证明正号情况。\\
+令$x=a\tan t\big(\di-\frac{\pi}{2}<t<\frac{\pi}{2}\big)$,则\vspace{0.5em}\\
+$\di\int \frac{1}{\sqrt{x^2+a^2}}\d x=\int\frac{a\sec^2 t}{\sqrt{a^2\sec^2t}}\d t=\int \frac{1}{\cos t}\d t=\frac{1}{2}\ln \bigg|\frac{1+\sin t}{1-\sin t}\bigg|+C=\ln |\sec t+\tan t|+C$.\vspace{0.5em}\\
+如下图所示的直角三角形，可知当$\tan t=\di\frac{x}{a}$时,$\sec t=\di\frac{\sqrt{x^2+a^2}}{a}$,由上式得，\vspace{0.5em}\\
+$\di\int\frac{1}{\sqrt{x^2+a^2}}\d x=\ln|\sec t+\tan t|+C=\ln\bigg|\frac{x}{a}+\frac{\sqrt{x^2+a^2}}{a}\bigg|+C=\ln|x+\sqrt{x^2+a^2}|+C'.$\vspace{0.5em}\\
+25.$\di\int \sqrt{x^2\pm a^2}\d x=\frac{x}{2}\sqrt{x^2\pm a^2}+\frac{a^2}{2}\ln(x+\sqrt{x^2\pm a^2})+C$\vspace{0.5em}\\
+\proof 由于正负号证法相似，故下面只证明正号的情况\sj
+\begin{flalign*}
+\int \sqrt{x^2+a^2}\d x &=\int (x)'\sqrt{x^2+a^2}\d x=x\sqrt{x^2+a^2}-\int x(\sqrt{x^2+a^2})'\d x=x\sqrt{x^2+a^2}-\int\frac{x^2}{\sqrt{x^2+a^2}}\d x&\\
+&=x\sqrt{x^2+a^2}-\int\frac{x^2+a^2-a^2}{\sqrt{x^2+a^2}}\d x=x\sqrt{x^2+a^2}-\int\sqrt{x^2+a^2}\d x+\int \frac{a^2}{\sqrt{x^2+a^2}}\d x&\\
+&=x\sqrt{x^2+a^2}-\int \sqrt{x^2+a^2}\d x+a^2\int\frac{1}{\sqrt{x^2+a^2}}\d x&
+\end{flalign*}
+故$\int\sqrt{x^2+a^2}\d x=x\sqrt{x^2+a^2}-\int\sqrt{x^2+a^2}\d x+a^2\ln|x+\sqrt{x^2+a^2}|$,即
+\begin{equation}
+	\nonumber
+	2\int\sqrt{x^2+a^2}\d x=x\sqrt{x^2+a^2}+a^2\ln|x+\sqrt{x^2+a^2}|.
+\end{equation}
+\begin{equation}
+	\nonumber
+	\int \sqrt{x^2+a^2}\d x=\frac{x}{2}\sqrt{x^2+a^2}+\frac{a^2}{2}\ln(x+\sqrt{x^2+a^2})+C.
+\end{equation}
+\section{不定积分的运算法则}
