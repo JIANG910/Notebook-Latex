@@ -31,8 +31,8 @@
 	f'(x)=(x^\mu)'=\mu x^{\mu-1}
 \end{equation}
 3.\enspace$f(x)=\sin x$
-\vspace{0.8em} \\ \solve $f'(x)=\lim\limits_{h\to 0}\di\frac{f(x+h)-f(x)}{h}=\lim\limits_{h\to 0}\di\frac{\sin (x+h)-\sin x}{h}=\lim\limits_{h\to 0}\di\frac{1}{h}\cdot 2\cos\di(x+\frac{h}{2})\cdot\sin\di\frac{h}{2}$\\  
-\hspace*{7em} =$\lim\limits_{h\to 0}\frac{\di\sin\frac{h}{2}}{\di\frac{h}{2}}\cdot\cos(x+\di\frac{h}{2})\cdot\di\sin\frac{h}{2}=\cos x$
+\vspace{0.8em} \\ \solve $f'(x)=\lim\limits_{h\to 0}\di\frac{f(x+h)-f(x)}{h}=\lim\limits_{h\to 0}\di\frac{\sin (x+h)-\sin x}{h}=\lim\limits_{h\to 0}\di\frac{1}{h}\cdot 2\cos\di\bigg(x+\frac{h}{2}\bigg)\cdot\sin\di\frac{h}{2}$\\  
+\hspace*{7em} $=\lim\limits_{h\to 0}\frac{\di\sin\frac{h}{2}}{\di\frac{h}{2}}\cdot\cos\bigg(x+\di\frac{h}{2}\bigg)\cdot\di\sin\frac{h}{2}=\cos x$
 \\即
 \vspace{0.8em}
 \begin{equation}
@@ -49,10 +49,10 @@ $f'(x)=\lim\limits_{h\to 0}\di \frac{f(x+h)-f(x)}{h}=\lim\limits_{h\to0}\frac{a^
 	f'(x)=(a^x)'=a^x\cdot\ln a
 \end{equation}
 5.\enspace$f(x)=\log_a x(a>0,a\neq1)$
-\vspace{0.8em} \\ \solve $f'(x)=\lim\limits_{h\to0}\di\frac{f(x+h)-f(x)}{h}=\lim\limits_{h\to0}\di\frac{\log_a (x+h)-\log_a x}{h}=\lim\limits_{h\to0}\di\frac{1}{h}\cdot\log_a(1+\di\frac{h}{x})=\di\frac{1}{h}\cdot\lim\limits_{h\to0}\di\frac{x}{h}\cdot\log_a(1+\di\frac{h}{x})$\\
+\vspace{0.8em} \\ \solve $f'(x)=\lim\limits_{h\to0}\di\frac{f(x+h)-f(x)}{h}=\lim\limits_{h\to0}\di\frac{\log_a (x+h)-\log_a x}{h}=\lim\limits_{h\to0}\di\frac{1}{h}\cdot\log_a\bigg(1+\di\frac{h}{x}\bigg)=\di\frac{1}{h}\cdot\lim\limits_{h\to0}\di\frac{x}{h}\cdot\log_a\bigg(1+\di\frac{h}{x}\bigg)$\\
 令$u=\di\frac{h}{x},h\to0,u\to0$,得
 \begin{equation}
-	\nonumber f'(x)=\frac{1}{x}\cdot\lim\limits_{h\to0}\frac{x}{h}\cdot\log_a(1+\frac{h}{x})=\frac{1}{x}\cdot\lim\limits_{u\to0}\frac{1}{u}\cdot\log_a(1+u)=\frac{1}{x}\cdot\lim\limits_{u\to0}\log_a(1+u^{\frac{1}{u}})=\frac{1}{x}\cdot\lim\limits_{u\to0}\log_a e=\frac{1}{x}\cdot\frac{1}{\ln a}=\frac{1}{x\cdot\ln a}
+	\nonumber f'(x)=\frac{1}{x}\cdot\lim\limits_{h\to0}\frac{x}{h}\cdot\log_a\bigg(1+\frac{h}{x}\bigg)=\frac{1}{x}\cdot\lim\limits_{u\to0}\frac{1}{u}\cdot\log_a(1+u)=\frac{1}{x}\cdot\lim\limits_{u\to0}\log_a(1+u^{\frac{1}{u}})=\frac{1}{x}\cdot\lim\limits_{u\to0}\log_a e=\frac{1}{x}\cdot\frac{1}{\ln a}=\frac{1}{x\cdot\ln a}
 	\end{equation}
 即\\
 \begin{equation}
@@ -61,7 +61,7 @@ $f'(x)=\lim\limits_{h\to 0}\di \frac{f(x+h)-f(x)}{h}=\lim\limits_{h\to0}\frac{a^
 \end{equation}
 \subsection{导函数与单侧导数}
 \tdefination[导数定义2]
-如果函数$y=f(x)$在开区间$I$内的每点处都可导，那么就称函数$f(x)$在开区间$I$内可导。这时，对于任意$xz\in I$,都对应着$f(x)$的一个确定的导数值。这样就构成了一个新的函数，这个函数叫做原来函数的导函数，简称导数。记作
+如果函数$y=f(x)$在开区间$I$内的每点处都可导，那么就称函数$f(x)$在开区间$I$内可导。这时，对于任意$x\in I$,都对应着$f(x)$的一个确定的导数值。这样就构成了一个新的函数，这个函数叫做原来函数的导函数，简称导数。记作
 \begin{equation}
 	\nonumber
 	f'(x)\huo y'\huo \frac{\d y}{\d x}\huo \frac{\d f(x)}{\d x}
@@ -85,11 +85,11 @@ $f'(x)=\lim\limits_{h\to 0}\di \frac{f(x+h)-f(x)}{h}=\lim\limits_{h\to0}\frac{a^
 \noindent 1.\enspace 双曲函数与反双曲函数\vspace*{1em}\\
 双曲正弦函数 \kg sh $x=\di\frac{e^x-e^{-x}}{2}$  \kg \kg 反双曲正弦函数\kg arsh $x=\ln(x+\sqrt{x^2+1})$\vspace*{1em}\\
 双曲余弦函数 \kg ch $x=\di\frac{e^x+e^{-x}}{2}$  \kg \kg 反双曲余弦函数\kg arch $x=\ln(x\pm\sqrt{x^2+1})\left\{\begin{aligned}
-		&  x>0:+\\
-		&  x<0:-\\
+		&  \, x>0:+\\
+		&  \, x<0:-\\
 		\end{aligned}\right.
 		$\vspace*{1em}\\
-双曲正切函数 \kg th $x=\di\frac{e^x-e^{-x}}{e^x+e^{-x}}$  \kg \kg 反双曲正切函数\kg arch $x=\di\frac{1}{2}\ln\di\frac{1+x}{1-x}$\vspace*{1em}\\
+双曲正切函数 \kg th $x=\di\frac{e^x-e^{-x}}{e^x+e^{-x}}$  \kg \kg 反双曲正切函数\kg arth $x=\di\frac{1}{2}\ln\di\frac{1+x}{1-x}$\vspace*{1em}\\
 2.\enspace 三角函数的补充函数\vspace*{1em}\\
 余割函数 \kg csc $x=\di\frac{1}{\sin x}$  \kg \kg 正割函数\kg sec $x=\di\frac{1}{\cos x}$\vspace*{1em}\\
 余切函数 \kg cot $x=\di\frac{1}{\tan x}$  \kg \kg 反三角函数\kg  $\arcsin x$,$\arccos x$,$\arctan x$,arccsc $x$,arcsec $x$,arccot $x$
@@ -110,7 +110,7 @@ $f'(x)=\lim\limits_{h\to 0}\di \frac{f(x+h)-f(x)}{h}=\lim\limits_{h\to0}\frac{a^
 设$f(x),g(x)$可导，则
 \begin{flalign*}
 &1.\enspace[f(x)+g(x)]'=f'(x)+g'(x) &2.&\enspace[Cf(x)]'=Cf'(x)(C\text{为常数})\vspace{1em}&&\\
-&3.\enspace[f(x)\cdot g(x)]'=f'(x)\cdot g(x)+f(x)\cdot g'(x) &4.&\enspace[\frac{f(x)}{g(x)}]'=\frac{f'(x)\cdot g(x)-f(x)\cdot g'(x)}{[g(x)]^2}&&
+&3.\enspace[f(x)\cdot g(x)]'=f'(x)\cdot g(x)+f(x)\cdot g'(x) &4.&\enspace\bigg[\frac{f(x)}{g(x)}\bigg]'=\frac{f'(x)\cdot g(x)-f(x)\cdot g'(x)}{[g(x)]^2}&&
 \end{flalign*}
 \subsection{反函数的求导法则}
 设$x=f(y)$在区间$I_y$内单调、可导且$f'(y)$,则它的反函数$y=f^{-1}(x)$在$I_x=f(I_y)$内也可导，则
@@ -145,7 +145,7 @@ $f'(x)=\lim\limits_{h\to 0}\di \frac{f(x+h)-f(x)}{h}=\lim\limits_{h\to0}\frac{a^
 \end{equation}
 当$\Delta x\to 0$时，有
 \begin{equation}
-	\lim\limits_{\Delta x\to 0}\frac{\Delta y}{\d y}=\lim\limits_{\Delta x\to 0}\frac{\Delta y}{f'(x_0)\Delta x}=\frac{1}{f'(x_0)}\lim\limits_{\Delta x\to 0}\frac{\Delta y}{\Delta x}=\frac{1}{f'(x_0)}f'(x_0)=1\vspace*{0.5em}
+	\lim\limits_{\Delta x\to 0}\frac{\Delta y}{\d y}=\lim\limits_{\Delta x\to 0}\frac{\Delta y}{f^{'}(x_0)\Delta x}=\frac{1}{f^{'}(x_0)}\lim\limits_{\Delta x\to 0}\frac{\Delta y}{\Delta x}=\frac{1}{f^{'}(x_0)}f'(x_0)=1\vspace*{0.5em}
 \end{equation} 
 从而，当$\Delta x\to 0$时，$\Delta y$与$\d y$是等价无穷小，于是这时有
 \begin{equation}
@@ -158,7 +158,7 @@ $f'(x)=\lim\limits_{h\to 0}\di \frac{f(x+h)-f(x)}{h}=\lim\limits_{h\to0}\frac{a^
 如，在直角坐标系中，函数$y=f(x)$的图形是一条曲线相对与某一固定的$x_0$值，曲线上有一个确定点$M(x_0,y_0)$,当自变量$x$有微小增量$\Delta x$时，就得到曲线上另一点$N(x_0+\Delta x,y_0+\Delta y)$,从图可知
 \begin{equation}
 	\nonumber
-	MQ=\delta x=\d x,NQ=\Delta y
+	MQ=\Delta x=\d x,NQ=\Delta y
 \end{equation}
 过点$M$作曲线的切线$MT$，它的倾角为$\alpha$,则
 \begin{equation}
@@ -175,24 +175,24 @@ $f'(x)=\lim\limits_{h\to 0}\di \frac{f(x+h)-f(x)}{h}=\lim\limits_{h\to0}\frac{a^
 \subsection{基本初等函数的微分公式}
 从函数的微分表达式
 \begin{equation}
-	\d y=f'(x)\d x\huo \d f(x)=f'(x) \d x
+	\d y=f'(x)\, \d x\huo \d f(x)=f'(x)\, \d x
 \end{equation}
 \kg 可以看出，要计算函数的微分只需要计算函数的导数，再乘以自变量的微分，例如：$\d(\sin x)=\cos x \d x$,其它基本初等函数的微分也类似，故在此不再赘述。（参见基本函数求导公式）
 \subsection{微分运算法则}
 由函数和差商积的求导法则，可推得相应的微分法则。
 \begin{flalign*}
 	&1.\enspace d(u\pm v)=\d u+\d v &2.&\enspace \d(uv)=v\d u+u\d v&&\\
-	&3.\enspace\d(Cu)=C\d u &4.&\enspace\d(\frac{u}{v})=\frac{v\d u-u\d v}{v^2}&&
+	&3.\enspace\d(Cu)=C\d u &4.&\enspace\d\bigg(\frac{u}{v}\bigg)=\frac{v\d u-u\d v}{v^2}&&
 \end{flalign*}
 设$y=f(u)$及$u=g(x)$都可导，则复合函数$y=f[g(x)]$的微分为
 \begin{equation}
-	\d y=y'_x\d x=f'(u)g'(x)\d x
+	\d y=y'_x\,\d x=f'(u)g'(x)\,\d x
 \end{equation}
-由于$g(x)\d x=\d u$，所以，复合函数$y=f[g(x)]$的微分公式也可以写成
+由于$g(x)\,\d x=\d u$，所以，复合函数$y=f[g(x)]$的微分公式也可以写成
 \begin{equation}
-\d y=f'(u)\d u\huo \d y=y'_u\d u
+\d y=f'(u)\,\d u\huo \d y=y'_u\,\d u
 \end{equation}
-\kg 由此可见，无论$u$是自变量还是中间变量。微分形式$\d y=f'(u)\d u$保持不变。这一性质称为微分形式不变性，这性质表明，当变换自变量时，微分形式$\d y=f'(u)\d u$并不改变。
+\kg 由此可见，无论$u$是自变量还是中间变量。微分形式$\d y=f'(u)\,\d u$保持不变。这一性质称为微分形式不变性，这性质表明，当变换自变量时，微分形式$\d y=f'(u)\,\d u$并不改变。
 \warn[\kg 微分形式不变性仅适用于一阶微分，对于二阶及以上的微分并不成立，这个在高阶导数和高阶微分中会详细说明。]
 \section{隐函数的导数}
 \subsection{隐函数与显函数的概念}
@@ -229,7 +229,7 @@ $f'(x)=\lim\limits_{h\to 0}\di \frac{f(x+h)-f(x)}{h}=\lim\limits_{h\to0}\frac{a^
 即\begin{equation}
 	\frac{\d y}{\d x}=-\frac{y}{x+\e^y}(x+\e^y\neq0)
 \end{equation}
-\kg 有些时候对于复杂的显函数也可以用隐函数求导的方法进行求导，常见的方法就是\highlight{red}{\index{DSQDF@对数求导法}对数求导法}，下面给出两个典型例题：\\
+\kg 有些时候对于复杂的显函数也可以用隐函数求导的方法进行求导，常见的方法就是\highlight{red}{\index{DSQDF@对数求导法}对数求导法}，下面给出两个典型例题：\vspace*{0.5em}\\
 \examples 求函数$y=\sin x$的导数
 \\ \solve 等式两边分别取对数，得$\ln y=\sin x\cdot \ln x$
 \\我们把方程两边分别对$x$求导数，得
@@ -263,8 +263,8 @@ $f'(x)=\lim\limits_{h\to 0}\di \frac{f(x+h)-f(x)}{h}=\lim\limits_{h\to0}\frac{a^
 一般地，若\highlight{red}{\index{CSFC@参数方程}参数方程}
 \begin{equation}
 	\left\{ \begin{aligned}
-		&\enspace x=\varphi(t)\\
-		&\enspace y=\psi (t)\\
+		&\, x=\varphi(t)\\
+		&\, y=\psi (t)\\
 	\end{aligned}\right.
 \end{equation}
 确定$y$与$x$的关系，则称此函数关系所表达的函数为由上述\highlight{red}{参数方程所确定的函数}。
@@ -274,8 +274,8 @@ $f'(x)=\lim\limits_{h\to 0}\di \frac{f(x+h)-f(x)}{h}=\lim\limits_{h\to0}\frac{a^
 \begin{equation}
 	\nonumber
 	\left\{ \begin{aligned}
-		&\enspace x=x(t)\\
-		&\enspace y=y (t)\\
+		&\, x=x(t)\\
+		&\, y=y (t)\\
 	\end{aligned}\right.
 \end{equation}
 其导数的计算式为
@@ -286,8 +286,8 @@ $f'(x)=\lim\limits_{h\to 0}\di \frac{f(x+h)-f(x)}{h}=\lim\limits_{h\to0}\frac{a^
 \begin{equation}
 	\nonumber
 	\left\{ \begin{aligned}
-		&\enspace x=a\cos t\\
-		&\enspace y=b\sin t\\
+		&\, x=a\cos t\\
+		&\, y=b\sin t\\
 	\end{aligned}\right.
 \end{equation}
 求椭圆在$t=\di\frac{\pi}{4}$相应的点处的切线方程。\\
@@ -295,8 +295,8 @@ $f'(x)=\lim\limits_{h\to 0}\di \frac{f(x+h)-f(x)}{h}=\lim\limits_{h\to0}\frac{a^
 \begin{equation}
 	\nonumber
 	\left\{ \begin{aligned}
-		&\enspace x_0=a\cos \frac{\pi}{4}=\frac{\sqrt{2}a}{2}\\
-		&\enspace y_0=b\cos \frac{\pi}{4}=\frac{\sqrt{2}b}{2}\\
+		&\, x_0=a\cos \frac{\pi}{4}=\frac{\sqrt{2}a}{2}\\
+		&\, y_0=b\cos \frac{\pi}{4}=\frac{\sqrt{2}b}{2}\\
 	\end{aligned}\right.
 \end{equation}
 曲线在$M_0$的切线斜率为:
@@ -319,8 +319,8 @@ $f'(x)=\lim\limits_{h\to 0}\di \frac{f(x+h)-f(x)}{h}=\lim\limits_{h\to0}\frac{a^
 \begin{equation}
 	\nonumber
 	\left\{ \begin{aligned}
-		&\enspace x=x(t)\\
-		&\enspace y=y (t)\\
+		&\, x=x(t)\\
+		&\, y=y (t)\\
 	\end{aligned}\right.
 \end{equation}
 其二阶导数的计算式为
@@ -349,7 +349,7 @@ $f'(x)=\lim\limits_{h\to 0}\di \frac{f(x+h)-f(x)}{h}=\lim\limits_{h\to0}\frac{a^
 \sj\sj\sj
 \summarize[\kg 对于一般的函数求其$n$阶导数，都是先求其$1,2,3$阶导函数，找到其中的规律从而写出通式。常见函数$n$阶导函数有：
 \begin{equation}
-	(a^x)^{(n)}=a^x\cdot\ln^na(a>0,a\neq1)\stackrel{a=\e}{\longrightarrow}(\e^x)^{(n)}=\e^x
+	(a^x)^{(n)}=a^x\cdot\ln^na(a>0,a\neq1)\xrightarrow{\di  a=\e}(\e^x)^{(n)}=\e^x
 	\end{equation}
 \begin{equation}
 	{[(a+bx)^{\mu}]}^{(n)}=
@@ -366,7 +366,7 @@ $f'(x)=\lim\limits_{h\to 0}\di \frac{f(x+h)-f(x)}{h}=\lim\limits_{h\to0}\frac{a^
 	\end{equation}
 \begin{equation}
 	\bigg(\frac{1}{a+bx}\bigg)^{(n)}=(-1)^{n}\frac{n!b^n}{(a+bx)^{n+1}}(b\neq0)
-\end{equation}]
+  \end{equation}]
 \subsection{函数运算的高阶导数}
 \noindent 1.\enspace 加减运算函数的$n$阶导数\\
 \kg 设函数$u=u(x),v=v(x)$在点$x$处有$n$阶导数，那么$u(x)+v(x),u(x)-v(x)$在点$x$处也具有$n$阶导数，且
@@ -374,7 +374,7 @@ $f'(x)=\lim\limits_{h\to 0}\di \frac{f(x+h)-f(x)}{h}=\lim\limits_{h\to0}\frac{a^
 	(u\pm v)^{(n)}=u^{(n)}+v^{(n)}
 \end{equation}
 2.\enspace 乘法运算函数的$n$阶导数
-\\ \kg 设函数$u=u(x),v=vv(x)$在点$x$处具有$n$阶导数，
+\\ \kg 设函数$u=u(x),v=v(x)$在点$x$处具有$n$阶导数，
 \begin{equation}
 	\nonumber
 	(uv)'=u'v+uv'\vspace{-0.3em} 
@@ -439,33 +439,33 @@ $f'(x)=\lim\limits_{h\to 0}\di \frac{f(x+h)-f(x)}{h}=\lim\limits_{h\to0}\frac{a^
 
 \sj
 \theorem[罗尔(Rolle)定理]
-设函数$f(x)$满足\\
-(1)\enspace 在闭区间$[a,b]$上连续；\\
-(2)\enspace 在开区间$[a,b]$内可导；\\
-(3)\enspace 在区间端点处的函数值相等，即$f(a)=f(b)$,\\
+\noindent 设函数$f(x)$满足\\
+\kg(1)\enspace 在闭区间$[a,b]$上连续；\\
+\kg(2)\enspace 在开区间$[a,b]$内可导；\\
+\kg(3)\enspace 在区间端点处的函数值相等，即$f(a)=f(b)$,\\
 那么，在$(a,b)$内至少有一点$\xi $,使得$f'(\xi)=0$.\vspace{0.5em}\\
 \proof 由于函数$f(x)$在闭区间$[a,b]$上连续，那么一定存在最大值$M$，最小值$m$.
-\\ (i)$M=m$\\
+\\ (i)\enspace $M=m$\\
 \kg 当$M=m$时，这个时候函数的图像便是一条直线，那么，任意$\xi \in(a,b)$,都有$f(\xi)\leq f(x)$,由费马引理，得
 \begin{equation}
 \nonumber
 f'(\xi)=0\sj
 \end{equation}
-(ii)$M\geq m $\\
-(1)\enspace $M=f(a)=f(b)$.\\
+(ii)\enspace$M\geq m $\\
+\circled{1} $M=f(a)=f(b)$.\\
 \kg 当$M=f(a)=f(b)$时，由于$M>m$,那么$x_m\neq a,x_m\neq b$,即有$f(x)\geq f(x_m)$.由费马引理，得
 \begin{equation}
 	\nonumber
 	f'(x_m)=0
 \end{equation}
 取$\xi=x_m$即可。\\
-$m=f(a)=f(b)$.\\
+\circled{2} $m=f(a)=f(b)$.\\
 \kg 当$m=f(a)=f(b)$时，由于$M>m$，那么$x_M\neq a,x_M\neq b$,即有$f(x_M)\geq f(x)$.由费马引理，得
 \begin{equation}
 	f'(x_M)=0
 \end{equation}
 取$\xi=x_M$即可。\\
-$m<f(a)=f(b)<M$.\\
+\circled{3} $m<f(a)=f(b)<M$.\\
 \kg 当$m<f(a)=f(b)<M时$，$x_M,x_m\neq a,b.$.即有$f(x_M)\geq f(x)\geq f(x_m)$.那么由费马引理得
 \begin{equation}
 	f'(x_M)=0\kg f'(x_m)=0
@@ -476,9 +476,9 @@ $m<f(a)=f(b)<M$.\\
 
 \sj
 \theorem[拉格朗日(Lagrange)中值定理]\\
-设函数$f(x)$满足：
-\\(1)\enspace 在闭区间$[a,b]$上连续；\\
-(2)\enspace 在开区间$(a,b)$内可导；\\
+\noindent 设函数$f(x)$满足：
+\\ \kg(1)\enspace 在闭区间$[a,b]$上连续；\\
+\kg (2)\enspace 在开区间$(a,b)$内可导；\\
 那么，在$(a,b)$内至少有一点$\xi(a<\xi<b)$使得
 \begin{equation}
 	\frac{f(b)-f(a)}{b-a}=f'(\xi)\sj
