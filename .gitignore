@@ -1,3 +1,5 @@
+.DS_Store
+
 chapter/.DS_Store
 chapter/*.aux
 chapter/*.log
