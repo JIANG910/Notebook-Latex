@@ -1,0 +1,14 @@
+.DS_Store
+
+chapter/.DS_Store
+chapter/*.aux
+chapter/*.log
+
+*.aux
+*.idx
+*.ilg
+*.log
+*.ind
+*.out
+*.gz
+*.toc
