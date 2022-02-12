@@ -336,9 +336,10 @@ $f'(x)=\lim\limits_{h\to 0}\di \frac{f(x+h)-f(x)}{h}=\lim\limits_{h\to0}\frac{a^
 \end{equation}
 函数$y=f(x)$具有$n$阶导数，也可以说函数$f(x)$为\highlight{red}{$n$阶可导}。如果函数$f(x)$在点$x$处具有$n$阶导数，那么$f(x)$在点$x$的某一领域内必定有一切低于$n$阶的导数。二阶及二阶以上的导数统称\highlight{red}{\index{GJDS@高阶导数}高阶导数}。
 \subsection{一般高阶导数的求法}
-\noindent 1.\enspace 多次连续求导
-\\2.\enspace 找到相邻阶导数的关系（递推关系）\\
-3.\enspace 利用递推数列的相关解法推出通式，进而写出高阶导数的通式\\
+
+\noindent 1.\enspace 多次连续求导；
+\\2.\enspace 找到相邻阶导数的关系（递推关系）；\\
+3.\enspace 利用递推数列的相关解法推出通式，进而写出高阶导数的通式。\\
 下面给出一个具体例子\vspace{0.5em}\\
 \examples 求函数$y=\sin x$的$n$阶导数
 \\ \solve $y'=\cos x=\sin\bigg(x+\di\frac{\pi}{2}\bigg),y''=\cos \bigg(x+\di\frac{\pi}{2}\bigg)=\sin\bigg(x+\di\frac{\pi}{2}+\frac{\pi}{2}\bigg)=\sin\bigg(x+2\cdot\di\frac{\pi}{2}\bigg),\cdots$
@@ -445,32 +446,32 @@ $f'(x)=\lim\limits_{h\to 0}\di \frac{f(x+h)-f(x)}{h}=\lim\limits_{h\to0}\frac{a^
 \kg(3)\enspace 在区间端点处的函数值相等，即$f(a)=f(b)$,\\
 那么，在$(a,b)$内至少有一点$\xi $,使得$f'(\xi)=0$.\vspace{0.5em}\\
 \proof 由于函数$f(x)$在闭区间$[a,b]$上连续，那么一定存在最大值$M$，最小值$m$.
-\\ (i)\enspace $M=m$\\
+\\ (1)\enspace $M=m$\\
 \kg 当$M=m$时，这个时候函数的图像便是一条直线，那么，任意$\xi \in(a,b)$,都有$f(\xi)\leq f(x)$,由费马引理，得
 \begin{equation}
 \nonumber
 f'(\xi)=0\sj
 \end{equation}
-(ii)\enspace$M\geq m $\\
-\circled{1} $M=f(a)=f(b)$.\\
+(2)\enspace$M\geq m $\\
+\quad \circled{1} $M=f(a)=f(b)$.\\
 \kg 当$M=f(a)=f(b)$时，由于$M>m$,那么$x_m\neq a,x_m\neq b$,即有$f(x)\geq f(x_m)$.由费马引理，得
 \begin{equation}
 	\nonumber
 	f'(x_m)=0
 \end{equation}
 取$\xi=x_m$即可。\\
-\circled{2} $m=f(a)=f(b)$.\\
+\quad \circled{2} $m=f(a)=f(b)$.\\
 \kg 当$m=f(a)=f(b)$时，由于$M>m$，那么$x_M\neq a,x_M\neq b$,即有$f(x_M)\geq f(x)$.由费马引理，得
 \begin{equation}
 	f'(x_M)=0
 \end{equation}
 取$\xi=x_M$即可。\\
-\circled{3} $m<f(a)=f(b)<M$.\\
+\quad \circled{3} $m<f(a)=f(b)<M$.\\
 \kg 当$m<f(a)=f(b)<M时$，$x_M,x_m\neq a,b.$.即有$f(x_M)\geq f(x)\geq f(x_m)$.那么由费马引理得
 \begin{equation}
 	f'(x_M)=0\kg f'(x_m)=0
 \end{equation}
-取$\xi=x_M,x_m$即可。
+取$\xi=\big\lbrace x_M,x_m \big\rbrace$即可。
 \subsection{拉格朗日中值定理}
 罗尔定理中$f(a)=f(b)$这个条件是相当特殊的，它使罗尔定理的应用受到限制。所以我们将罗尔定理推广到拉格朗日中值定理.\\
 
